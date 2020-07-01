@@ -1,15 +1,17 @@
 # Tmux simple git status
+Forked from kristijanhusak/tmux-simple-git-stat to add the remote branch and untracked files.
 
 Prints current pane git branch and uncommitted changes (if available).
 
 ![screenshot](https://i.imgur.com/SzOftNt.png)
+
 
 ## Installation
 ### Installation with [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm) (recommended)
 
 Add plugin to the list of TPM plugins in `.tmux.conf`:
 
-    set -g @plugin 'kristijanhusak/tmux-simple-git-status'
+    set -g @plugin 'yefuwang/tmux-simple-git-status'
 
 Add `#{simple_git_status}` to your `status-left` or `status-right` tmux option:
 
@@ -23,7 +25,7 @@ Hit `prefix + I` to fetch the plugin and source it.
 
 Clone the repo:
 
-    $ git clone https://github.com/kristijanhusak/tmux-simple-git-status ~/clone/path
+    $ git clone https://github.com/yefuwang/tmux-simple-git-status ~/clone/path
 
 Add this line to the bottom of `.tmux.conf`:
 
